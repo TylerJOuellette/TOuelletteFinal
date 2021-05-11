@@ -34,6 +34,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/how\/hand.png" : {
+      "ft" : 32768,
+      "iS" : 2050958,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/how\/hand.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/what\/what.png" : {
+      "ft" : 32768,
+      "iS" : 1708631,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/what\/what.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
