@@ -10,6 +10,17 @@
     
     >div {
 
+        grid-area: material;
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: $orange;
+        }
+
         ul {
 
             #materialintro {

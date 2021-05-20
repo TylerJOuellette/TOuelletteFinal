@@ -4,11 +4,14 @@
 #color {
 
     display: grid;
-    grid-template-areas: ". material .";
+    grid-template-areas: ". color .";
     grid-template-columns: 7.5% auto 7.5%;
 
     
     >div {
+
+        grid-area: color;
+        
 
         ul {
 
@@ -18,6 +21,7 @@
 
             #colortext {
                 grid-area: colortext;
+                background-color: $yellow;
             }
 
             #colortable {
@@ -27,10 +31,9 @@
             
 
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 60% 40%;
             grid-template-areas:
-                "colorpic colorpic colortext colortext"
-                ". colortable colortable .";
+                "colorpic colortext";
         }
 
 

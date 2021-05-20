@@ -2,9 +2,28 @@
     Beaches
 ============= */
 #beaches {
+    display: grid;
+    grid-template-areas: ". beaches .";
+    grid-template-columns: 7.5% auto 7.5%;
+
+    >div{
+        grid-area: beaches;
+    }
     img {
 		display: block;
         object-fit: cover;
 		width: 100%;
 	}
+
+    >div {
+        h2{
+            text-align: right;
+            background-color: $pink;
+
+        }
+        p{
+            text-align: center;
+
+        }
+    }
 }

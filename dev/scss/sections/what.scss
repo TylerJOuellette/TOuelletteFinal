@@ -2,10 +2,32 @@
     What
 ============= */
 #what {
-   
-    img {
-		display: block;
-        object-fit: cover;
-		width: 100%;
-	}
+    display: grid;
+    grid-template-areas: ". what .";
+    grid-template-columns: 7.5% auto 7.5%;
+    text-align: center;
+
+    >div{
+        grid-area: what;
+
+        h2 {
+            background-color: $teal;
+        }
+    }
+    // text-align: center;
+
+    
+    
+    // >div {
+    //     p{
+    //         display: grid;
+    //         grid-template-areas: ". intro .";
+    //         grid-template-columns: 7.5% auto 7.5%;
+    //         text-align: center;
+
+    //         >div {
+    //             grid-area: what;
+    //         }
+    //     }
+    // }
 }

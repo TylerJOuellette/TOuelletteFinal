@@ -427,16 +427,39 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #8AA3D1;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #8AA3D1;
+}
+
 /* =============
     Beaches
 ============= */
+#beaches {
+  display: grid;
+  grid-template-areas: ". beaches .";
+  grid-template-columns: 7.5% auto 7.5%;
+}
+#beaches > div {
+  grid-area: beaches;
+}
 #beaches img {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+#beaches > div h2 {
+  text-align: right;
+  background-color: #FFA4A8;
+}
+#beaches > div p {
+  text-align: center;
 }
 
 /* =============
@@ -444,19 +467,23 @@ textarea {
 ============= */
 #color {
   display: grid;
-  grid-template-areas: ". material .";
+  grid-template-areas: ". color .";
   grid-template-columns: 7.5% auto 7.5%;
+}
+#color > div {
+  grid-area: color;
 }
 #color > div ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "colorpic colorpic colortext colortext" ". colortable colortable .";
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "colorpic colortext";
 }
 #color > div ul #colorpic {
   grid-area: colortitle;
 }
 #color > div ul #colortext {
   grid-area: colortext;
+  background-color: #F5CA6A;
 }
 #color > div ul #colortable {
   grid-area: colortable;
@@ -481,6 +508,10 @@ textarea {
   display: grid;
   grid-template-areas: ". intro .";
   grid-template-columns: 7.5% auto 7.5%;
+  text-align: center;
+}
+#intro > div {
+  grid-area: intro;
 }
 
 /* =============
@@ -490,6 +521,16 @@ textarea {
   display: grid;
   grid-template-areas: ". material .";
   grid-template-columns: 7.5% auto 7.5%;
+}
+#material > div {
+  grid-area: material;
+}
+#material > div p {
+  text-align: center;
+}
+#material > div h2 {
+  text-align: center;
+  background-color: #F9B475;
 }
 #material > div ul {
   display: grid;
@@ -543,8 +584,15 @@ textarea {
 /* =============
     What
 ============= */
-#what img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
+#what {
+  display: grid;
+  grid-template-areas: ". what .";
+  grid-template-columns: 7.5% auto 7.5%;
+  text-align: center;
+}
+#what > div {
+  grid-area: what;
+}
+#what > div h2 {
+  background-color: #8AC6D1;
 }

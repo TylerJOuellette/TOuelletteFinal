@@ -5,4 +5,9 @@
     display: grid;
     grid-template-areas: ". intro .";
     grid-template-columns: 7.5% auto 7.5%;
+    text-align: center;
+
+    >div{
+        grid-area: intro;
+    }
 }
