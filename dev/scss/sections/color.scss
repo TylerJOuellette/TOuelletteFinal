@@ -3,38 +3,43 @@
 ============= */
 #color {
 
-    display: grid;
-    grid-template-areas: ". color .";
-    grid-template-columns: 7.5% auto 7.5%;
+    // display: grid;
+    // grid-template-areas: ". color .";
+    // grid-template-columns: 7.5% auto 7.5%;
 
     
     >div {
 
-        grid-area: color;
+        // grid-area: color;
+        display: grid;
+            grid-template-columns: 60% 40%;
         
 
-        ul {
+     
+            
+            // grid-template-areas:
+            //     "colorpic colortext";
 
             #colorpic {
-                grid-area: colortitle;
+                // grid-area: colortitle;
+                img{
+                    width: 100%;
+                }
             }
 
             #colortext {
-                grid-area: colortext;
+                // grid-area: colortext;
                 background-color: $yellow;
             }
 
-            #colortable {
-                grid-area: colortable;
-            }
+            // #colortable {
+            //     grid-area: colortable;
+            // }
 
             
 
-            display: grid;
-            grid-template-columns: 60% 40%;
-            grid-template-areas:
-                "colorpic colortext";
-        }
+            
+ 
 
 
     }

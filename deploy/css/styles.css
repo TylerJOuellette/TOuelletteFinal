@@ -441,6 +441,12 @@ footer {
 /* =============
     Beaches
 ============= */
+#beachespic img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
 #beaches {
   display: grid;
   grid-template-areas: ". beaches .";
@@ -448,11 +454,6 @@ footer {
 }
 #beaches > div {
   grid-area: beaches;
-}
-#beaches img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
 }
 #beaches > div h2 {
   text-align: right;
@@ -465,28 +466,15 @@ footer {
 /* =============
     Color
 ============= */
-#color {
-  display: grid;
-  grid-template-areas: ". color .";
-  grid-template-columns: 7.5% auto 7.5%;
-}
 #color > div {
-  grid-area: color;
-}
-#color > div ul {
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-areas: "colorpic colortext";
 }
-#color > div ul #colorpic {
-  grid-area: colortitle;
+#color > div #colorpic img {
+  width: 100%;
 }
-#color > div ul #colortext {
-  grid-area: colortext;
+#color > div #colortext {
   background-color: #F5CA6A;
-}
-#color > div ul #colortable {
-  grid-area: colortable;
 }
 
 /* =============
@@ -532,11 +520,32 @@ footer {
   text-align: center;
   background-color: #F9B475;
 }
+#material > div img {
+  width: 100%;
+}
 #material > div ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: ". materialintro materialintro ." "whites blues reds yellows" "purples turquoises blue-greens pinks";
   gap: 12px;
+}
+@media (min-width: 768px) {
+  #material > div ul {
+    gap: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #material > div ul {
+    gap: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  #material > div ul {
+    gap: 41px;
+  }
+}
+#material > div ul li {
+  border: 1px soild red;
 }
 #material > div ul #materialintro {
   grid-area: materialintro;
@@ -565,21 +574,6 @@ footer {
 #material > div ul #pinks {
   grid-area: pinks;
 }
-@media (min-width: 768px) {
-  #material > div ul {
-    gap: 25px;
-  }
-}
-@media (min-width: 992px) {
-  #material > div ul {
-    gap: 35px;
-  }
-}
-@media (min-width: 1200px) {
-  #material > div ul {
-    gap: 41px;
-  }
-}
 
 /* =============
     What
@@ -595,4 +589,7 @@ footer {
 }
 #what > div h2 {
   background-color: #8AC6D1;
+}
+#what > div img {
+  width: 100%;
 }

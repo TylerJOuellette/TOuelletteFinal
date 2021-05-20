@@ -21,7 +21,37 @@
             background-color: $orange;
         }
 
+        img{
+            width: 100%;
+        }
+
         ul {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                ". materialintro materialintro ."
+                "whites blues reds yellows"
+                "purples turquoises blue-greens pinks";
+            gap: 12px;
+
+                        
+
+            @include md {
+                gap: 25px;
+            }
+
+            @include lg {
+                gap: 35px;
+            }
+
+            @include xl {
+                gap: 41px;
+            }
+
+            li{
+                border: 1px soild red;
+            }
 
             #materialintro {
                 grid-area: materialintro;
@@ -29,6 +59,7 @@
 
             #whites {
                 grid-area: whites;
+              
             }
 
             #blues {
@@ -59,25 +90,7 @@
                 grid-area: pinks;
             }
 
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                ". materialintro materialintro ."
-                "whites blues reds yellows"
-                "purples turquoises blue-greens pinks";
-            gap: 12px;
 
-            @include md {
-                gap: 25px;
-            }
-
-            @include lg {
-                gap: 35px;
-            }
-
-            @include xl {
-                gap: 41px;
-            }
         }
     }
 }
