@@ -445,6 +445,44 @@ textarea {
 /* =============
     Material
 ============= */
+#material {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". material .";
+}
+#material > div ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: ". materialintro materialintro ." "whites blues reds yellows" "purples turquoises blue-greens pinks";
+}
+#material > div ul #materialintro {
+  grid-area: materialintro;
+}
+#material > div ul #whites {
+  grid-area: whites;
+}
+#material > div ul #blues {
+  grid-area: blues;
+}
+#material > div ul #reds {
+  grid-area: reds;
+}
+#material > div ul #yellows {
+  grid-area: yellows;
+}
+#material > div ul #purples {
+  grid-area: purples;
+}
+#material > div ul #turquoises {
+  grid-area: turquoises;
+}
+#material > div ul #blue-greens {
+  grid-area: blue-greens;
+}
+#material > div ul #pinks {
+  grid-area: pinks;
+}
+
 /* =============
     What
 ============= */
