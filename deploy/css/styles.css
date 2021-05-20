@@ -444,12 +444,22 @@ textarea {
 ============= */
 #color {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "colorpic colorpic colorpic colortext colortext colortext" ". . colortable colortable . .";
+  grid-template-areas: ". material .";
+  grid-template-columns: 7.5% auto 7.5%;
 }
-#color img {
-  display: block;
-  object-fit: cover;
+#color > div ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "colorpic colorpic colortext colortext" ". colortable colortable .";
+}
+#color > div ul #colorpic {
+  grid-area: colortitle;
+}
+#color > div ul #colortext {
+  grid-area: colortext;
+}
+#color > div ul #colortable {
+  grid-area: colortable;
 }
 
 /* =============
@@ -459,6 +469,9 @@ textarea {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+#how #frosted {
+  text-align: right;
 }
 
 /* =============

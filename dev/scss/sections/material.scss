@@ -13,168 +13,39 @@
         ul {
 
             #materialintro {
-                // background-color: $white;
-                // margin: 18px 0px 11px 0px;
-
-                // @include md {
-                //     margin: 35px 0px 19px 0px;
-                // }
-
-                // @include lg {
-                //     margin: 47px 0px 18px 0px;
-                // }
-
-                // @include xl {
-                //     margin: 60px 0px 7px 0px;
-                // }
-
-                // h2 {
-                //     font-size: rem-calc(20);
-                //     font-weight: 300;
-
-                //     @include lg {
-                //         font-size: rem-calc(37);
-                //     }
-                // }
-
                 grid-area: materialintro;
             }
 
             #whites {
                 grid-area: whites;
-
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a1;
-                // }
             }
 
             #blues {
                 grid-area: blues;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a2;
-                // }
             }
 
             #reds {
                 grid-area: reds;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a3;
-                // }
             }
 
             #yellows {
                 grid-area: yellows;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a4;
-                // }
             }
 
             #purples {
                 grid-area: purples;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a5;
-                // }
             }
 
             #turquoises {
                 grid-area: turquoises;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a5;
-                // }
             }
 
             #blue-greens {
                 grid-area: blue-greens;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a5;
-                // }
             }
 
             #pinks {
                 grid-area: pinks;
-                // h3 {
-                //     font-size: rem-calc(27);
-                //     font-weight: 700;
-                // }
-
-                // p {
-                //     font-size: rem-calc(16);
-                //     font-weight: 400;
-                // }
-
-                // @include md {
-                //     grid-area: a5;
-                // }
             }
 
             display: grid;
@@ -196,47 +67,6 @@
             @include xl {
                 gap: 41px;
             }
-
-
-
-            // li {
-            //     background-color: $lavendar;
-
-            //     h2 {
-            //         background-color: $white;
-            //     }
-
-            //     img {
-            //         width: 100%;
-            //     }
-
-            //     section {
-            //         display: grid;
-            //         grid-template-columns: 16px auto 16px;
-            //         grid-template-areas: ". articlesection-content .";
-
-            //         >div {
-            //             grid-area: articlesection-content;
-
-            //             button {
-            //                 background-color: $discord;
-            //                 color: $white;
-
-            //                 &:hover {
-            //                     background-color: $white;
-            //                     color: $discord;
-            //                     transition: 0.25s;
-            //                 }
-            //             }
-            //         }
-            //     }
         }
-
-
     }
 }
-    // display: grid;
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-template-areas:
-    //     "whites blues reds yellows"
-    //     "purples turquoises blue-greens pinks";

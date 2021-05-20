@@ -2,14 +2,37 @@
     Color
 ============= */
 #color {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-        "colorpic colorpic colorpic colortext colortext colortext"
-        ". . colortable colortable . .";
 
-    img {
-		display: block;
-        object-fit: cover;
-	}
+    display: grid;
+    grid-template-areas: ". material .";
+    grid-template-columns: 7.5% auto 7.5%;
+
+    
+    >div {
+
+        ul {
+
+            #colorpic {
+                grid-area: colortitle;
+            }
+
+            #colortext {
+                grid-area: colortext;
+            }
+
+            #colortable {
+                grid-area: colortable;
+            }
+
+            
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "colorpic colorpic colortext colortext"
+                ". colortable colortable .";
+        }
+
+
+    }
 }
