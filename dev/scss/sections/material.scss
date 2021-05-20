@@ -4,8 +4,9 @@
 #material {
 
     display: grid;
-    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". material .";
+    grid-template-columns: 7.5% auto 7.5%;
+
     
     >div {
 
@@ -182,6 +183,21 @@
                 ". materialintro materialintro ."
                 "whites blues reds yellows"
                 "purples turquoises blue-greens pinks";
+            gap: 12px;
+
+            @include md {
+                gap: 25px;
+            }
+
+            @include lg {
+                gap: 35px;
+            }
+
+            @include xl {
+                gap: 41px;
+            }
+
+
 
             // li {
             //     background-color: $lavendar;

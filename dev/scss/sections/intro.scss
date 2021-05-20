@@ -1,3 +1,8 @@
 /* =============
     Intro
 ============= */
+#intro {
+    display: grid;
+    grid-template-areas: ". intro .";
+    grid-template-columns: 7.5% auto 7.5%;
+}

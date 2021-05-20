@@ -1,3 +1,15 @@
 /* =============
     Color
 ============= */
+#color {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "colorpic colorpic colorpic colortext colortext colortext"
+        ". . colortable colortable . .";
+
+    img {
+		display: block;
+        object-fit: cover;
+	}
+}

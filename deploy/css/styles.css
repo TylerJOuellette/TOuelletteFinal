@@ -433,27 +433,56 @@ textarea {
 /* =============
     Beaches
 ============= */
+#beaches img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
 /* =============
     Color
 ============= */
+#color {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "colorpic colorpic colorpic colortext colortext colortext" ". . colortable colortable . .";
+}
+#color img {
+  display: block;
+  object-fit: cover;
+}
+
 /* =============
     How
 ============= */
+#how img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
 /* =============
     Intro
 ============= */
+#intro {
+  display: grid;
+  grid-template-areas: ". intro .";
+  grid-template-columns: 7.5% auto 7.5%;
+}
+
 /* =============
     Material
 ============= */
 #material {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". material .";
+  grid-template-columns: 7.5% auto 7.5%;
 }
 #material > div ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: ". materialintro materialintro ." "whites blues reds yellows" "purples turquoises blue-greens pinks";
+  gap: 12px;
 }
 #material > div ul #materialintro {
   grid-area: materialintro;
@@ -482,7 +511,27 @@ textarea {
 #material > div ul #pinks {
   grid-area: pinks;
 }
+@media (min-width: 768px) {
+  #material > div ul {
+    gap: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #material > div ul {
+    gap: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  #material > div ul {
+    gap: 41px;
+  }
+}
 
 /* =============
     What
 ============= */
+#what img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
