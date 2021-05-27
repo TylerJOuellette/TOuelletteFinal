@@ -458,6 +458,7 @@ footer {
 #beaches > div h2 {
   text-align: right;
   background-color: #FFA4A8;
+  color: #472C2D;
 }
 #beaches > div p {
   text-align: center;
@@ -475,6 +476,7 @@ footer {
 }
 #color > div #colortext {
   background-color: #F5CA6A;
+  color: #483A1C;
 }
 
 /* =============
@@ -484,6 +486,10 @@ footer {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+#how #howart {
+  background-color: #A0E2C1;
+  color: #213129;
 }
 #how #frosted {
   text-align: right;
@@ -519,6 +525,7 @@ footer {
 #material > div h2 {
   text-align: center;
   background-color: #F9B475;
+  color: #513823;
 }
 #material > div img {
   width: 100%;
@@ -589,7 +596,9 @@ footer {
 }
 #what > div h2 {
   background-color: #8AC6D1;
+  color: #293C40;
 }
-#what > div img {
+
+#whatimage img {
   width: 100%;
 }
