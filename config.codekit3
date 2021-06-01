@@ -23,9 +23,22 @@
     },
     "\/deploy\/img\/beaches\/beaches.png" : {
       "ft" : 32768,
-      "iS" : 2141071,
+      "iS" : 472048,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/beaches\/beaches.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/color\/yellowseaglass.png" : {
+      "ft" : 32768,
+      "iS" : 287089,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/color\/yellowseaglass.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -49,12 +62,12 @@
     },
     "\/deploy\/img\/how\/hand.png" : {
       "ft" : 32768,
-      "iS" : 2050958,
+      "iS" : 653142,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/how\/hand.png",
       "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
@@ -62,7 +75,7 @@
     },
     "\/deploy\/img\/material\/blue-green.png" : {
       "ft" : 32768,
-      "iS" : 106610,
+      "iS" : 35829,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/blue-green.png",
       "oF" : 0,
@@ -75,7 +88,7 @@
     },
     "\/deploy\/img\/material\/blue.png" : {
       "ft" : 32768,
-      "iS" : 101515,
+      "iS" : 31577,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/blue.png",
       "oF" : 0,
@@ -88,7 +101,7 @@
     },
     "\/deploy\/img\/material\/pink.png" : {
       "ft" : 32768,
-      "iS" : 87619,
+      "iS" : 30902,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/pink.png",
       "oF" : 0,
@@ -101,7 +114,7 @@
     },
     "\/deploy\/img\/material\/purple.png" : {
       "ft" : 32768,
-      "iS" : 81256,
+      "iS" : 29355,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/purple.png",
       "oF" : 0,
@@ -114,7 +127,7 @@
     },
     "\/deploy\/img\/material\/red.png" : {
       "ft" : 32768,
-      "iS" : 101761,
+      "iS" : 27542,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/red.png",
       "oF" : 0,
@@ -127,7 +140,7 @@
     },
     "\/deploy\/img\/material\/turquoise.png" : {
       "ft" : 32768,
-      "iS" : 102855,
+      "iS" : 35090,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/turquoise.png",
       "oF" : 0,
@@ -140,7 +153,7 @@
     },
     "\/deploy\/img\/material\/white.png" : {
       "ft" : 32768,
-      "iS" : 86289,
+      "iS" : 34133,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/white.png",
       "oF" : 0,
@@ -153,7 +166,7 @@
     },
     "\/deploy\/img\/material\/yellow.png" : {
       "ft" : 32768,
-      "iS" : 92044,
+      "iS" : 24674,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/material\/yellow.png",
       "oF" : 0,
@@ -166,7 +179,7 @@
     },
     "\/deploy\/img\/what\/what.png" : {
       "ft" : 32768,
-      "iS" : 1708631,
+      "iS" : 447188,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/what\/what.png",
       "oF" : 0,
@@ -443,6 +456,90 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/beaches.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/beaches.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/color.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/color.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/how.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/how.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/intro.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/intro.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/material.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/material.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/what.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/what.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -456,6 +553,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/Odyssey Sea Glass.sketch" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Odyssey Sea Glass.sketch",
+      "oF" : 0
     }
   },
   "hooks" : [
@@ -466,7 +571,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 639424315.56556404,
-    "displayValue" : "OOOO",
+    "displayValue" : "Ouellette-Final",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0

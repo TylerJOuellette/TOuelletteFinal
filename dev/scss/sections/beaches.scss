@@ -1,0 +1,35 @@
+/* =============
+    Beaches
+============= */
+#beachespic {
+    img {
+		display: block;
+        object-fit: cover;
+		width: 100%;
+	}
+}
+#beaches {
+    display: grid;
+    grid-template-areas: ". beaches .";
+    grid-template-columns: 7.5% auto 7.5%;
+
+
+    >div{
+        grid-area: beaches;
+    }
+ 
+
+    >div {
+        h2{
+            text-align: right;
+            background-color: $pink;
+            color: $dpink;
+
+        }
+        p{
+            text-align: center;
+            color: $gray;
+
+        }
+    }
+}

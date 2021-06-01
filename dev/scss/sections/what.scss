@@ -1,0 +1,78 @@
+/* =============
+    What
+============= */
+#what {
+    display: grid;
+    grid-template-areas: ". what .";
+    grid-template-columns: 7.5% auto 7.5%;
+    text-align: center;
+    color: $gray;
+    font-size: rem-calc(9);
+    font-weight: 400;
+    padding: 20px 0px;
+
+
+    @include md{
+        font-size: rem-calc(20);
+        padding: 40px 0px;
+    }
+    @include lg{
+        font-size: rem-calc(25);
+        padding: 100px 0px;
+    }
+
+    
+
+    >div{
+        grid-area: what;
+
+        
+
+
+    }
+    // text-align: center;
+
+    
+    
+    // >div {
+    //     p{
+    //         display: grid;
+    //         grid-template-areas: ". intro .";
+    //         grid-template-columns: 7.5% auto 7.5%;
+    //         text-align: center;
+
+    //         >div {
+    //             grid-area: what;
+    //         }
+    //     }
+    // }
+}
+
+#whatimage {
+    img{
+        width: 100%;
+    }
+}
+
+#whattitle {
+    background-color: $teal;
+    color: $dteal;
+    text-align: center;
+    font-size: rem-calc(16);
+    font-weight: 700;
+    padding: 8px 0px;
+
+
+    @include md{
+        font-size: rem-calc(40);
+        padding: 16px 0px;
+
+    }
+    @include lg{
+        font-size: rem-calc(50);
+        padding: 32px 0px;
+
+    }
+
+    }
+    

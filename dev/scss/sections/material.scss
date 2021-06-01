@@ -1,0 +1,98 @@
+/* =============
+    Material
+============= */
+#material {
+
+    display: grid;
+    grid-template-areas: ". material .";
+    grid-template-columns: 7.5% auto 7.5%;
+
+    
+    >div {
+
+        grid-area: material;
+
+        p {
+            text-align: center;
+            color: $gray;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: $orange;
+            color: $dorange;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        ul {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                ". materialintro materialintro ."
+                "whites blues reds yellows"
+                "purples turquoises blue-greens pinks";
+            gap: 12px;
+
+                        
+
+            @include md {
+                gap: 25px;
+            }
+
+            @include lg {
+                gap: 35px;
+            }
+
+            @include xl {
+                gap: 41px;
+            }
+
+            li{
+                border: 1px soild red;
+            }
+
+            #materialintro {
+                grid-area: materialintro;
+            }
+
+            #whites {
+                grid-area: whites;
+              
+            }
+
+            #blues {
+                grid-area: blues;
+            }
+
+            #reds {
+                grid-area: reds;
+            }
+
+            #yellows {
+                grid-area: yellows;
+            }
+
+            #purples {
+                grid-area: purples;
+            }
+
+            #turquoises {
+                grid-area: turquoises;
+            }
+
+            #blue-greens {
+                grid-area: blue-greens;
+            }
+
+            #pinks {
+                grid-area: pinks;
+            }
+
+
+        }
+    }
+}

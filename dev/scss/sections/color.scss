@@ -1,0 +1,47 @@
+/* =============
+    Color
+============= */
+#color {
+
+    // display: grid;
+    // grid-template-areas: ". color .";
+    // grid-template-columns: 7.5% auto 7.5%;
+
+    
+    >div {
+
+        // grid-area: color;
+        display: grid;
+            grid-template-columns: 60% 40%;
+        
+
+     
+            
+            // grid-template-areas:
+            //     "colorpic colortext";
+
+            #colorpic {
+                // grid-area: colortitle;
+                img{
+                    width: 100%;
+                }
+            }
+
+            #colortext {
+                // grid-area: colortext;
+                background-color: $yellow;
+                color: $dyellow;
+            }
+
+            // #colortable {
+            //     grid-area: colortable;
+            // }
+
+            
+
+            
+ 
+
+
+    }
+}

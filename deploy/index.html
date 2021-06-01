@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;1,700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a38814c494.js" crossorigin="anonymous"></script>
+
+    
     <link rel="stylesheet" href="css/styles.css">
     <title>In-Class Demo</title>
+    <script src="https://kit.fontawesome.com/a38814c494.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -21,6 +32,8 @@
         </div>
     </header>
 
+   
+
     <section id="intro">
     
         <div>
@@ -34,16 +47,22 @@
         
     </section>
 
+    <section id="whatbegin">
+        <h2 id="whattitle">
+            What is Sea Glass?
+        </h2>
+        
+        <section id="whatimage">
+            <img src="img/what/what.png" alt="Turquoise sea glass on the beach">
+        </section>
+    </section>
+    
     <section id="what">
     
         <div>
-            <h2>
-                What is Sea Glass?
-            </h2>
+         
     
-            <img src="img/what/what.png" alt="Turquoise sea glass on the beach">
-    
-            <p>
+            <p id="whatparagraph">
                 Sea Glass is glass that was littered into the ocean many years ago, and through the transformative powers of the ocean becomes a beautiful, smooth and clouded jewel. Some other names that people call sea glass include “beach glass,” “mermaid tears,” and “sea gems” among others! It’s likely you’ve seen or even picked up some of these during a stroll on the beach.
             </p>
     
@@ -55,16 +74,19 @@
     <section id="how">
     
         <div>
-            <h2>
-                How It's Made
-            </h2>
-            <p>
-                Once glass is tossed into the ocean, its transformation into true sea glass can take anywhere from 5 to 50+ years! Waves will move the glass to a shore. From here, the glass will be smoothed out over the course of years by being roughed up against sand and rocks by the waves in a process called tumbling. The glass will slowly have components leeched out of it by the salt water and will be bathed in sunlight, which gives sea glass its distinctive frosted look.
-            </p>
+            <article id="howart">
+                <h2>
+                    How It's Made
+                </h2>
+                <p>
+                    Once glass is tossed into the ocean, its transformation into true sea glass can take anywhere from 5 to 50+ years! Waves will move the glass to a shore. From here, the glass will be smoothed out over the course of years by being roughed up against sand and rocks by the waves in a process called tumbling. The glass will slowly have components leeched out of it by the salt water and will be bathed in sunlight, which gives sea glass its distinctive frosted look.
+                </p>
+            </article>
+            
     
-            <img src="img/how/hand.png" alt="Hand holding green sea glass">
+            <!-- <img src="img/how/hand.png" alt="Hand holding green sea glass"> -->
     
-            <h1>
+            <h1 id="frosted">
                 "distinctive frosted look"
             </h1>
         </div>
@@ -73,38 +95,43 @@
 
     <section id="color">
     
-        <div>
-            <img src="img/what/what.png" alt="Turquoise sea glass on the beach">
-    
-            <h2>
-                Colors of Sea Glass
-            </h2>
-    
-            <p>
-                Sea Glass comes in many colors; if there is glass of a certain color, there will be sea glass of that color! Some colors are more rare than others. Here is a list on how common some of the colors are.
-            </p>
-    
-            <table>
-                <tr>
-                  <td id="common">Common</td>
-                  <td id="common-color">White, Green, Brown</td>
-                </tr>
-                <tr>
-                  <td id="uncommon">Uncommon</td>
-                  <td id="uncommon-color">Seafoam, Light Blue, Amber, Lime Green</td>
-                </tr>
-                <tr>
-                  <td id="rare">Rare</td>
-                  <td id="rare-color">Cobalt, Pale Yellow, Gray, Lavender</td>
-                </tr>
-                <tr>
-                    <td id="rarest">Rarest</td>
-                    <td id="rarest-color">Red, Black, Orange, Bright Yellow, Deep Purple, Peach</td>
-                  </tr>
-              </table>
-    
-    
+      <div>
+            
+        <div id="colorpic">
+          <img src="img/color/yellowseaglass.png" alt="Yellow Sea Glass on Table">
         </div>
+            
+        <div id="colortext">
+          <h2>
+            Colors of Sea Glass
+          </h2>
+          <p>
+            Sea Glass comes in many colors; if there is glass of a certain color, there will be sea glass of that color! Some colors are more rare than others. Here is a list on how common some of the colors are.
+          </p>
+        </div>
+    
+        <!-- <div id="colortable">
+          <table>
+            <tr>
+              <td id="common">Common</td>
+              <td id="common-color">White, Green, Brown</td>
+            </tr>
+            <tr>
+              <td id="uncommon">Uncommon</td>
+              <td id="uncommon-color">Seafoam, Light Blue, Amber, Lime Green</td>
+            </tr>
+            <tr>
+              <td id="rare">Rare</td>
+              <td id="rare-color">Cobalt, Pale Yellow, Gray, Lavender</td>
+            </tr>
+            <tr>
+                <td id="rarest">Rarest</td>
+                <td id="rarest-color">Red, Black, Orange, Bright Yellow, Deep Purple, Peach</td>
+              </tr>
+          </table>
+        </div> -->
+    
+      </div>
         
     </section>
 
@@ -112,57 +139,83 @@
     
         <div>
     
-            <h2>
-                Materials in Sea Glass
-            </h2>
-    
-            <p>
-                Different colors of glass are made with different mineralds, so different colors of sea glass are consist of different minerals! Understanding what materials makes up each of your pieces of sea glass can add some fun historical context to them.
-            </p>
-    
-            <div>
-                <img src="img/material/blue.png" alt="blue sea glass">
-                <p>
-                    White: Tin
-                </p>
-                <img src="img/material/white.png" alt="white sea glass">
-                <p>
-                    Blue: Nickel
-                </p>
-                <img src="img/material/red.png" alt="red sea glass">
-                <p>
-                    Ruby/Cranberry: Metallic Gold
-                </p>
-                <img src="img/material/yellow.png" alt="yellow sea glass">
-                <p>
-                    Yellow: Sulphur
-                </p>
-                <img src="img/material/purple.png" alt="purple sea glass">
-                <p>
-                    Amethyst: Manganese
-                </p>
-                <img src="img/material/Turquoise.png" alt="Turquoise sea glass">
-                <p>
-                    Turquoise: Copper Oxide
-                </p>
-                <img src="img/material/blue-green.png" alt="blue-green sea glass">
-                <p>
-                    Blue-ish Green: Iron
-                </p>
-                <img src="img/material/pink.png" alt="pink sea glass">
-                <p>
-                    Pink: Selenium
-                </p>
-            </div>
+            <ul>
+                <li id="materialintro">
+                    <section>
+                        <div>
+                            <h2>
+                                Materials in Sea Glass
+                            </h2>
+                            <p>
+                                Different colors of glass are made with different minerals, so different colors of sea glass
+                                are consist of different minerals! Understanding what materials makes up each of your pieces
+                                of sea glass can add some fun historical context to them.
+                            </p>
+                        </div>
+                    </section>
+                </li>
+                <li id="whites">
+                    <img src="img/material/white.png" alt="white sea glass">
+                    <p>
+                        White: Tin
+                    </p>
+                </li>
+                <li id="blues">
+                    <img src="img/material/blue.png" alt="blue sea glass">
+                    <p>
+                        Blue: Nickel
+                    </p>
+                </li>
+                <li id="reds">
+                    <img src="img/material/red.png" alt="red sea glass">
+                    <p>
+                        Ruby/Cranberry: Metallic Gold
+                    </p>
+                </li>
+                <li id="yellows">
+                    <img src="img/material/yellow.png" alt="yellow sea glass">
+                    <p>
+                        Yellow: Sulphur
+                    </p>
+                </li>
+                <li id="purples">
+                    <img src="img/material/purple.png" alt="purple sea glass">
+                    <p>
+                        Amethyst: Manganese
+                    </p>
+                </li>
+                <li id="turquoises">
+                    <img src="img/material/Turquoise.png" alt="Turquoise sea glass">
+                    <p>
+                        Turquoise: Copper Oxide
+                    </p>
+                </li>
+                <li id="blue-greens">
+                    <img src="img/material/blue-green.png" alt="blue-green sea glass">
+                    <p>
+                        Blue-ish Green: Iron
+                    </p>
+                </li>
+                <li id="pinks">
+                    <img src="img/material/pink.png" alt="pink sea glass">
+                    <p>
+                        Pink: Selenium
+                    </p>
+                </li>
+            </ul>
     
         </div>
-        
+    
     </section>
 
+    <section id="beachespic">
+        <img src="img/beaches/beaches.png" alt="pink piece of sea glass on a beach">
+    </section>
+    
+    
     <section id="beaches">
     
         <div>
-            <img src="img/beaches/beaches.png" alt="pink piece of sea glass on a beach">
             
             <h2>
                 Finding Beaches
@@ -174,19 +227,19 @@
         
     </section>
 
-
-
-     <footer>
-         <div id="icons">
-             <ul>
-                 <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
-                 <li><a href="https://twitter.com/home"><i class="fab fa-twitter-square"></i></a></li>
-                 <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
-             </ul>
-         </div>
-     </footer>
+    <footer>
+        <div id="icons">
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://twitter.com/home"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="js/scripts-min.js"></script>
+
+
 </body>
 
 </html>
