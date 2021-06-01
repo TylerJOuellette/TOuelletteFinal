@@ -2,19 +2,39 @@
     How
 ============= */
 #how {
+    background-color: #e7e5de;
+        @include xl {
+            // padding: 50vh 0;
+            display: grid;
+            grid-template-columns: auto 1200px auto;
+
+            grid-template-areas: ". how .";
+        }
+
+    >div{
+
+        background-image: url("../img/how/hand.png");
+        background-size: cover;
+        background-position: center;
+        // padding: 0  0 200vh;
+
+
+        @include xl{
+            grid-area: how;
+        }
+
+        #howart {
+            background-color: $green;
+            color: $dgreen;
+            width: 50%;
+        }
     
-    img {
-		display: block;
-        object-fit: cover;
-		width: 100%;
-	}
-
-    #howart {
-        background-color: $green;
-        color: $dgreen;
+        #frosted {
+            text-align: right;
+            margin-top: 200vh;
+            color: $white;
+        }
+    }
     }
 
-    #frosted {
-        text-align: right;
-    }
-}
+    

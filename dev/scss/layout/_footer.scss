@@ -3,4 +3,29 @@
 ============= */
 footer {
     background-color: $blue;
+
+    #icons {
+		ul {
+			display: flex;
+			justify-content: center;
+			margin: 48px 0px;
+            font-size: rem-calc(30);
+			li {
+				margin: 0px 16px;
+				padding: 16px 0;
+				a:link,
+                a:visited {
+					color: $white;
+					transition: 0.25s;
+					&:hover,
+                    &:active {
+						color: $dteal;
+					}
+				}
+				@include md {
+					margin: 0px 24px;
+				}
+			}
+		}
+    }
 }

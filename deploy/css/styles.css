@@ -352,6 +352,22 @@ template {
 /* =============
     Base
 ============= */
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Gentium Basic", serif;
+}
+
+#frosted {
+  font-family: "Gentium Basic", serif;
+}
+
 figure {
   padding: 0;
   margin: 0;
@@ -429,6 +445,9 @@ textarea {
 ============= */
 header {
   background-color: #8AA3D1;
+  color: #fff;
+  padding: 16px 0px;
+  font-size: 1.5625rem;
 }
 
 /* =============
@@ -436,6 +455,31 @@ header {
 ============= */
 footer {
   background-color: #8AA3D1;
+}
+footer #icons ul {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0px;
+  font-size: 1.875rem;
+}
+footer #icons ul li {
+  margin: 0px 16px;
+  padding: 16px 0;
+}
+footer #icons ul li a:link,
+footer #icons ul li a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+footer #icons ul li a:link:hover, footer #icons ul li a:link:active,
+footer #icons ul li a:visited:hover,
+footer #icons ul li a:visited:active {
+  color: #293C40;
+}
+@media (min-width: 768px) {
+  footer #icons ul li {
+    margin: 0px 24px;
+  }
 }
 
 /* =============
@@ -462,6 +506,7 @@ footer {
 }
 #beaches > div p {
   text-align: center;
+  color: #454545;
 }
 
 /* =============
@@ -482,17 +527,35 @@ footer {
 /* =============
     How
 ============= */
-#how img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
+#how {
+  background-color: #e7e5de;
 }
-#how #howart {
+@media (min-width: 1200px) {
+  #how {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". how .";
+  }
+}
+#how > div {
+  background-image: url("../img/how/hand.png");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1200px) {
+  #how > div {
+    grid-area: how;
+  }
+}
+#how > div #howart {
   background-color: #A0E2C1;
   color: #213129;
+  width: 50%;
 }
-#how #frosted {
+#how > div #frosted {
   text-align: right;
+  margin-top: 200vh;
+  color: #fff;
 }
 
 /* =============
@@ -503,6 +566,59 @@ footer {
   grid-template-areas: ". intro .";
   grid-template-columns: 7.5% auto 7.5%;
   text-align: center;
+  color: #454545;
+  margin: 45px 0px;
+}
+@media (min-width: 768px) {
+  #intro {
+    margin: 85px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #intro {
+    margin: 100px 0px;
+  }
+}
+#intro h1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin: 0px 0px 7px 0px;
+}
+@media (min-width: 768px) {
+  #intro h1 {
+    font-size: 3.25rem;
+    margin: 0px 0px 25px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #intro h1 {
+    font-size: 3.8125rem;
+  }
+}
+@media (min-width: 768px) {
+  #intro h1 {
+    font-size: 4.4375rem;
+  }
+}
+#intro p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  #intro p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  #intro p {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 768px) {
+  #intro p {
+    font-size: 1.8125rem;
+  }
 }
 #intro > div {
   grid-area: intro;
@@ -521,6 +637,7 @@ footer {
 }
 #material > div p {
   text-align: center;
+  color: #454545;
 }
 #material > div h2 {
   text-align: center;
@@ -590,15 +707,48 @@ footer {
   grid-template-areas: ". what .";
   grid-template-columns: 7.5% auto 7.5%;
   text-align: center;
+  color: #454545;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 20px 0px;
+}
+@media (min-width: 768px) {
+  #what {
+    font-size: 1.25rem;
+    padding: 40px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #what {
+    font-size: 1.5625rem;
+    padding: 100px 0px;
+  }
 }
 #what > div {
   grid-area: what;
 }
-#what > div h2 {
-  background-color: #8AC6D1;
-  color: #293C40;
-}
 
 #whatimage img {
   width: 100%;
+}
+
+#whattitle {
+  background-color: #8AC6D1;
+  color: #293C40;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 0px;
+}
+@media (min-width: 768px) {
+  #whattitle {
+    font-size: 2.5rem;
+    padding: 16px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #whattitle {
+    font-size: 3.125rem;
+    padding: 32px 0px;
+  }
 }
