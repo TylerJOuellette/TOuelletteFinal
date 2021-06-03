@@ -3,33 +3,69 @@
 ============= */
 #beachespic {
     img {
-		display: block;
+        display: block;
         object-fit: cover;
-		width: 100%;
-	}
+        width: 100%;
+    }
 }
+
 #beaches {
     display: grid;
     grid-template-areas: ". beaches .";
     grid-template-columns: 7.5% auto 7.5%;
 
 
-    >div{
-        grid-area: beaches;
-    }
- 
-
     >div {
-        h2{
-            text-align: right;
-            background-color: $pink;
-            color: $dpink;
+        grid-area: beaches;
 
+        section {
+            display: flex;
+            justify-content: flex-end;
+            h2 {
+                background-color: $pink;
+                color: $dpink;
+                font-size: rem-calc(16);
+                font-weight: 700;
+                padding: 8px 0px;
+                display: inline-block;
+                margin-top: -100px;
+                
+
+                @include md {
+                    font-size: rem-calc(40);
+                    padding: 16px 0px;
+
+                }
+
+                @include lg {
+                    font-size: rem-calc(60);
+                    padding: 32px 0px;
+                }
+            }
         }
-        p{
-            text-align: center;
-            color: $gray;
+    }
 
+
+    p {
+        text-align: center;
+        color: $gray;
+        font-size: rem-calc(9);
+        font-weight: 400;
+        padding: 10px 0px 0px;
+
+
+        @include md {
+            font-size: rem-calc(20);
+            padding: 20px 0px 0px;
+        }
+
+        @include lg {
+            font-size: rem-calc(25);
+            padding: 25px 0px 0px;
+        }
+
+        @include xl {
+            padding: 35px 0px 0px;
         }
     }
 }

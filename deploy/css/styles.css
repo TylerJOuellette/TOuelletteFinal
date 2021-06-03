@@ -459,7 +459,7 @@ footer {
 footer #icons ul {
   display: flex;
   justify-content: center;
-  margin: 48px 0px;
+  margin: 48px 0px 0px 0px;
   font-size: 1.875rem;
 }
 footer #icons ul li {
@@ -499,14 +499,54 @@ footer #icons ul li a:visited:active {
 #beaches > div {
   grid-area: beaches;
 }
-#beaches > div h2 {
-  text-align: right;
+#beaches > div section {
+  display: flex;
+  justify-content: flex-end;
+}
+#beaches > div section h2 {
   background-color: #FFA4A8;
   color: #472C2D;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 0px;
+  display: inline-block;
+  margin-top: -100px;
 }
-#beaches > div p {
+@media (min-width: 768px) {
+  #beaches > div section h2 {
+    font-size: 2.5rem;
+    padding: 16px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #beaches > div section h2 {
+    font-size: 3.75rem;
+    padding: 32px 0px;
+  }
+}
+#beaches p {
   text-align: center;
   color: #454545;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 10px 0px 0px;
+}
+@media (min-width: 768px) {
+  #beaches p {
+    font-size: 1.25rem;
+    padding: 20px 0px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #beaches p {
+    font-size: 1.5625rem;
+    padding: 25px 0px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #beaches p {
+    padding: 35px 0px 0px;
+  }
 }
 
 /* =============
@@ -515,13 +555,63 @@ footer #icons ul li a:visited:active {
 #color > div {
   display: grid;
   grid-template-columns: 60% 40%;
+  grid-template-areas: "c-1 c-2" "c-title c-title";
+}
+#color > div #colorpic {
+  grid-area: c-1;
 }
 #color > div #colorpic img {
   width: 100%;
 }
 #color > div #colortext {
+  grid-area: c-2;
   background-color: #F5CA6A;
   color: #483A1C;
+  display: flex;
+  align-items: center;
+}
+#color > div #colortext h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 8px 4px;
+}
+@media (min-width: 768px) {
+  #color > div #colortext h2 {
+    font-size: 2.5rem;
+    padding: 16px 16px 8px;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortext h2 {
+    font-size: 3.75rem;
+    padding: 32px 32px 16px;
+  }
+}
+#color > div #colortext p {
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 0px 8px 10px;
+}
+@media (min-width: 768px) {
+  #color > div #colortext p {
+    font-size: 1.25rem;
+    padding: 0px 16px 20px;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortext p {
+    font-size: 1.5625rem;
+    padding: 0px 32px 40px;
+  }
+}
+#color > div #colortable {
+  grid-area: c-title;
+  width: 100%;
+  border: 1px solid green;
+}
+#color > div #colortable table {
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 /* =============
@@ -529,9 +619,21 @@ footer #icons ul li a:visited:active {
 ============= */
 #how {
   background-color: #e7e5de;
+  margin: 0px 0px 60px;
+}
+@media (min-width: 768px) {
+  #how {
+    margin: 0px 0px 80px;
+  }
+}
+@media (min-width: 992px) {
+  #how {
+    margin: 0px 0px 100px;
+  }
 }
 @media (min-width: 1200px) {
   #how {
+    margin: 0px 0px 160px;
     display: grid;
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". how .";
@@ -552,10 +654,62 @@ footer #icons ul li a:visited:active {
   color: #213129;
   width: 50%;
 }
+#how > div #howart h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 8px;
+}
+@media (min-width: 768px) {
+  #how > div #howart h2 {
+    font-size: 2.5rem;
+    padding: 16px 16px;
+  }
+}
+@media (min-width: 992px) {
+  #how > div #howart h2 {
+    font-size: 3.75rem;
+    padding: 32px 32px;
+  }
+}
+#how > div #howart p {
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 0px 8px 10px;
+}
+@media (min-width: 768px) {
+  #how > div #howart p {
+    font-size: 1.25rem;
+    padding: 0px 16px 20px;
+  }
+}
+@media (min-width: 992px) {
+  #how > div #howart p {
+    font-size: 1.5625rem;
+    padding: 0px 32px 40px;
+  }
+}
 #how > div #frosted {
   text-align: right;
   margin-top: 200vh;
   color: #fff;
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  #how > div #frosted {
+    font-size: 6.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #how > div #frosted {
+    font-size: 9.375rem;
+  }
+}
+@media (min-width: 1200px) {
+  #how > div #frosted {
+    font-size: 12.5rem;
+  }
 }
 
 /* =============
