@@ -6,4 +6,25 @@ header {
     color: $white;
     padding: 16px 0px;
     font-size: rem-calc(25);
+
+    div{
+        display: flex;
+    }
+
+
+    #logo{
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin: auto auto auto 7.5%;
+    
+    }
+
+    #hamburger{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin: auto 7.5% auto auto;
+    
+    }
 }

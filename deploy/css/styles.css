@@ -453,6 +453,21 @@ header {
   padding: 16px 0px;
   font-size: 1.5625rem;
 }
+header div {
+  display: flex;
+}
+header #logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin: auto auto auto 7.5%;
+}
+header #hamburger {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin: auto 7.5% auto auto;
+}
 
 /* =============
     Footer
