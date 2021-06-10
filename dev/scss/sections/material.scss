@@ -6,7 +6,15 @@
     display: grid;
     grid-template-areas: ". material .";
     grid-template-columns: 7.5% auto 7.5%;
+    margin: 0px 0px 60px;
 
+    @include md{
+        margin: 0px 0px 85px;
+    }
+
+    @include xl{
+        margin: 0px 0px 160px;
+    }
     
     >div {
 
@@ -32,6 +40,10 @@
 
             @include xl {
                 padding: 35px 0px 0px;
+            }
+
+            span {
+                font-style: italic;
             }
         }
 

@@ -499,6 +499,12 @@ footer #icons ul li a:visited:active {
   display: grid;
   grid-template-areas: ". beaches .";
   grid-template-columns: 7.5% auto 7.5%;
+  margin: 0px 0px 40px;
+}
+@media (min-width: 768px) {
+  #beaches {
+    margin: 0px 0px 80px;
+  }
 }
 #beaches > div {
   grid-area: beaches;
@@ -512,21 +518,21 @@ footer #icons ul li a:visited:active {
   color: #472C2D;
   font-size: 1rem;
   font-weight: 700;
-  padding: 8px 0px;
+  padding: 8px 8px;
   display: inline-block;
   margin-top: -20px;
 }
 @media (min-width: 768px) {
   #beaches > div section h2 {
     font-size: 2.5rem;
-    padding: 16px 0px;
+    padding: 16px 16px;
     margin-top: -50px;
   }
 }
 @media (min-width: 992px) {
   #beaches > div section h2 {
     font-size: 3.75rem;
-    padding: 32px 0px;
+    padding: 32px 32px;
     margin-top: -80px;
   }
 }
@@ -941,6 +947,17 @@ footer #icons ul li a:visited:active {
   display: grid;
   grid-template-areas: ". material .";
   grid-template-columns: 7.5% auto 7.5%;
+  margin: 0px 0px 60px;
+}
+@media (min-width: 768px) {
+  #material {
+    margin: 0px 0px 85px;
+  }
+}
+@media (min-width: 1200px) {
+  #material {
+    margin: 0px 0px 160px;
+  }
 }
 #material > div {
   grid-area: material;
@@ -968,6 +985,9 @@ footer #icons ul li a:visited:active {
   #material > div p {
     padding: 35px 0px 0px;
   }
+}
+#material > div p span {
+  font-style: italic;
 }
 #material > div h2 {
   text-align: center;
