@@ -487,7 +487,32 @@ header > div #nav-container {
   background-color: #8AA3D1;
   display: none;
   grid-area: nav;
-  padding: 20px 10px 10px;
+  padding: 0px 10px 20px;
+  margin: 0px 2.5% 0px 0px;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+header > div #nav-container a:link,
+header > div #nav-container a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+header > div #nav-container a:link:hover, header > div #nav-container a:link:active,
+header > div #nav-container a:visited:hover,
+header > div #nav-container a:visited:active {
+  color: #293C40;
+}
+@media (min-width: 768px) {
+  header > div #nav-container {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  header > div #nav-container {
+    font-size: 2rem;
+  }
 }
 
 /* =============
