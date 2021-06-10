@@ -452,21 +452,41 @@ header {
   color: #fff;
   padding: 16px 0px;
   font-size: 1.5625rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
-header div {
-  display: flex;
+header > div {
+  display: grid;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 20% auto;
+  grid-area: header;
 }
-header #logo {
-  display: flex;
+header > div #logo-container {
+  grid-area: logo;
+  padding: 10px;
+}
+header > div #logo-container a:link, header > div #logo-container a:visited {
+  transition: 0.25s;
+}
+header > div #burger-container {
   align-items: center;
-  margin-right: auto;
-  margin: auto auto auto 7.5%;
-}
-header #hamburger {
   display: flex;
-  align-items: center;
+  grid-area: burger;
+  padding: 10px;
+}
+header > div #burger-container i {
   margin-left: auto;
-  margin: auto 7.5% auto auto;
+  cursor: pointer;
+  font-size: 1.875rem;
+  color: #fff;
+}
+header > div #nav-container {
+  background-color: #8AA3D1;
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
 }
 
 /* =============
