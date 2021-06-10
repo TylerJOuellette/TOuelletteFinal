@@ -28,19 +28,22 @@
                 font-weight: 700;
                 padding: 8px 0px;
                 display: inline-block;
-                margin-top: -100px;
+                margin-top: -20px;
                 
 
                 @include md {
                     font-size: rem-calc(40);
                     padding: 16px 0px;
+                    margin-top: -50px;
 
                 }
 
                 @include lg {
                     font-size: rem-calc(60);
                     padding: 32px 0px;
+                    margin-top: -80px;
                 }
+                
             }
         }
     }
