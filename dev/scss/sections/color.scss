@@ -74,21 +74,148 @@
             #colortable {
                 grid-area: c-title;
                 width: 100%;
-                border: 1px solid green;
+                // border: 1px solid green;
+                margin: 30px 0px;
                 
-                
+                @include md{
+                    margin: 70px 0px;
+                }
+                @include lg{
+                    margin: 95px 0px;
+                }
+                @include xl{
+                    margin: 130px 0px;
+
+                }
 
                 table{
                     margin: 0 auto;
-                    border: 1px solid red;
+                    // border: 1px solid red;
+
+                    #common{
+                        background-color: $yellow;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                            @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+
+                            }
+                    }
+
+                    #common-color {
+                        background-color: $yellowl2;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+                    #uncommon {
+                        background-color: $yellowl1;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+                    #uncommon-color {
+                        background-color: $yellowl3;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+                    #rare {
+                        background-color: $yellow;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+                    #rare-color {
+                        background-color: $yellowl2;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+                    #rarest {
+                        background-color: $yellowl1;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+                    #rarest-color {
+                        background-color: $yellowl3;
+                        font-size: rem-calc(9);
+                        font-weight: 400;
+                        padding: 8px;
+    
+                        @include md{
+                            font-size: rem-calc(20);
+                            }
+                        @include lg{
+                            font-size: rem-calc(25);
+                            padding: 16px;
+                            }
+                    }
+
+
                 }
             }
-
-            
-
-            
- 
-
-
     }
 }

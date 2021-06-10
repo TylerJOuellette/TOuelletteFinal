@@ -15,12 +15,44 @@
         p {
             text-align: center;
             color: $gray;
+            font-size: rem-calc(9);
+            font-weight: 400;
+            padding: 10px 0px 0px;
+
+
+            @include md {
+                font-size: rem-calc(20);
+                padding: 20px 0px 0px;
+            }
+
+            @include lg {
+                font-size: rem-calc(25);
+                padding: 25px 0px 0px;
+            }
+
+            @include xl {
+                padding: 35px 0px 0px;
+            }
         }
 
         h2 {
             text-align: center;
             background-color: $orange;
             color: $dorange;
+            font-size: rem-calc(16);
+            font-weight: 700;
+            padding: 8px 8px;
+            
+            
+            @include md{
+                font-size: rem-calc(40);
+                padding: 16px 16px;
+            
+            }
+            @include lg{
+                font-size: rem-calc(60);
+                padding: 32px 32px;
+            }
         }
 
         img{
