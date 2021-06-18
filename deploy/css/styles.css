@@ -364,6 +364,10 @@ p {
   font-family: "Gentium Basic", serif;
 }
 
+table {
+  font-family: "Gentium Basic", serif;
+}
+
 #frosted {
   font-family: "Gentium Basic", serif;
 }
@@ -446,8 +450,69 @@ textarea {
 header {
   background-color: #8AA3D1;
   color: #fff;
-  padding: 16px 0px;
   font-size: 1.5625rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header > div {
+  display: grid;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 20% auto;
+  grid-area: header;
+}
+header > div #logo-container {
+  grid-area: logo;
+  padding: 16px;
+  margin: 0px 0px 0px 7.5%;
+}
+header > div #logo-container a:link, header > div #logo-container a:visited {
+  transition: 0.25s;
+}
+header > div #burger-container {
+  align-items: center;
+  display: flex;
+  grid-area: burger;
+  padding: 16px;
+  margin: 0px 2.5% 0px 0px;
+}
+header > div #burger-container i {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 1.875rem;
+  color: #fff;
+}
+header > div #nav-container {
+  background-color: #8AA3D1;
+  display: none;
+  grid-area: nav;
+  padding: 0px 10px 20px;
+  margin: 0px 2.5% 0px 0px;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+header > div #nav-container a:link,
+header > div #nav-container a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+header > div #nav-container a:link:hover, header > div #nav-container a:link:active,
+header > div #nav-container a:visited:hover,
+header > div #nav-container a:visited:active {
+  color: #293C40;
+}
+@media (min-width: 768px) {
+  header > div #nav-container {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  header > div #nav-container {
+    font-size: 2rem;
+  }
 }
 
 /* =============
@@ -459,7 +524,7 @@ footer {
 footer #icons ul {
   display: flex;
   justify-content: center;
-  margin: 48px 0px;
+  margin: 48px 0px 0px 0px;
   font-size: 1.875rem;
 }
 footer #icons ul li {
@@ -495,18 +560,66 @@ footer #icons ul li a:visited:active {
   display: grid;
   grid-template-areas: ". beaches .";
   grid-template-columns: 7.5% auto 7.5%;
+  margin: 0px 0px 40px;
+}
+@media (min-width: 768px) {
+  #beaches {
+    margin: 0px 0px 80px;
+  }
 }
 #beaches > div {
   grid-area: beaches;
 }
-#beaches > div h2 {
-  text-align: right;
+#beaches > div section {
+  display: flex;
+  justify-content: flex-end;
+}
+#beaches > div section h2 {
   background-color: #FFA4A8;
   color: #472C2D;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 8px;
+  display: inline-block;
+  margin-top: -20px;
 }
-#beaches > div p {
+@media (min-width: 768px) {
+  #beaches > div section h2 {
+    font-size: 2.5rem;
+    padding: 16px 16px;
+    margin-top: -50px;
+  }
+}
+@media (min-width: 992px) {
+  #beaches > div section h2 {
+    font-size: 3.75rem;
+    padding: 32px 32px;
+    margin-top: -80px;
+  }
+}
+#beaches p {
   text-align: center;
   color: #454545;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 10px 0px 0px;
+}
+@media (min-width: 768px) {
+  #beaches p {
+    font-size: 1.25rem;
+    padding: 20px 0px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #beaches p {
+    font-size: 1.5625rem;
+    padding: 25px 0px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #beaches p {
+    padding: 35px 0px 0px;
+  }
 }
 
 /* =============
@@ -515,13 +628,213 @@ footer #icons ul li a:visited:active {
 #color > div {
   display: grid;
   grid-template-columns: 60% 40%;
+  grid-template-areas: "c-1 c-2" "c-title c-title";
+}
+#color > div #colorpic {
+  grid-area: c-1;
 }
 #color > div #colorpic img {
   width: 100%;
 }
 #color > div #colortext {
+  grid-area: c-2;
   background-color: #F5CA6A;
   color: #483A1C;
+  display: flex;
+  align-items: center;
+}
+#color > div #colortext h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 8px 4px;
+}
+@media (min-width: 768px) {
+  #color > div #colortext h2 {
+    font-size: 2.5rem;
+    padding: 16px 16px 8px;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortext h2 {
+    font-size: 3.75rem;
+    padding: 32px 32px 16px;
+  }
+}
+#color > div #colortext p {
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 0px 8px 10px;
+}
+@media (min-width: 768px) {
+  #color > div #colortext p {
+    font-size: 1.25rem;
+    padding: 0px 16px 20px;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortext p {
+    font-size: 1.5625rem;
+    padding: 0px 32px 40px;
+  }
+}
+#color > div #colortable {
+  grid-area: c-title;
+  width: 100%;
+  margin: 30px 0px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable {
+    margin: 70px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable {
+    margin: 95px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #color > div #colortable {
+    margin: 130px 0px;
+  }
+}
+#color > div #colortable table {
+  margin: 0 auto;
+}
+#color > div #colortable table #common {
+  background-color: #F5CA6A;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #common {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #common {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #common-color {
+  background-color: rgba(245, 202, 106, 0.3);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #common-color {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #common-color {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #uncommon {
+  background-color: rgba(245, 202, 106, 0.6);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #uncommon {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #uncommon {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #uncommon-color {
+  background-color: rgba(245, 202, 106, 0.1);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #uncommon-color {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #uncommon-color {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #rare {
+  background-color: #F5CA6A;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #rare {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #rare {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #rare-color {
+  background-color: rgba(245, 202, 106, 0.3);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #rare-color {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #rare-color {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #rarest {
+  background-color: rgba(245, 202, 106, 0.6);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #rarest {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #rarest {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
+}
+#color > div #colortable table #rarest-color {
+  background-color: rgba(245, 202, 106, 0.1);
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  #color > div #colortable table #rarest-color {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #color > div #colortable table #rarest-color {
+    font-size: 1.5625rem;
+    padding: 16px;
+  }
 }
 
 /* =============
@@ -529,9 +842,21 @@ footer #icons ul li a:visited:active {
 ============= */
 #how {
   background-color: #e7e5de;
+  margin: 0px 0px 60px;
+}
+@media (min-width: 768px) {
+  #how {
+    margin: 0px 0px 80px;
+  }
+}
+@media (min-width: 992px) {
+  #how {
+    margin: 0px 0px 100px;
+  }
 }
 @media (min-width: 1200px) {
   #how {
+    margin: 0px 0px 160px;
     display: grid;
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". how .";
@@ -552,10 +877,62 @@ footer #icons ul li a:visited:active {
   color: #213129;
   width: 50%;
 }
+#how > div #howart h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 8px;
+}
+@media (min-width: 768px) {
+  #how > div #howart h2 {
+    font-size: 2.5rem;
+    padding: 16px 16px;
+  }
+}
+@media (min-width: 992px) {
+  #how > div #howart h2 {
+    font-size: 3.75rem;
+    padding: 32px 32px;
+  }
+}
+#how > div #howart p {
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 0px 8px 10px;
+}
+@media (min-width: 768px) {
+  #how > div #howart p {
+    font-size: 1.25rem;
+    padding: 0px 16px 20px;
+  }
+}
+@media (min-width: 992px) {
+  #how > div #howart p {
+    font-size: 1.5625rem;
+    padding: 0px 32px 40px;
+  }
+}
 #how > div #frosted {
   text-align: right;
   margin-top: 200vh;
   color: #fff;
+  font-size: 3.125rem;
+  font-weight: 700;
+  font-style: italic;
+}
+@media (min-width: 768px) {
+  #how > div #frosted {
+    font-size: 6.25rem;
+  }
+}
+@media (min-width: 992px) {
+  #how > div #frosted {
+    font-size: 9.375rem;
+  }
+}
+@media (min-width: 1200px) {
+  #how > div #frosted {
+    font-size: 12.5rem;
+  }
 }
 
 /* =============
@@ -567,16 +944,11 @@ footer #icons ul li a:visited:active {
   grid-template-columns: 7.5% auto 7.5%;
   text-align: center;
   color: #454545;
-  margin: 45px 0px;
-}
-@media (min-width: 768px) {
-  #intro {
-    margin: 85px 0px;
-  }
+  margin: 120px 0px 45px 0px;
 }
 @media (min-width: 992px) {
   #intro {
-    margin: 100px 0px;
+    margin: 150px 0px 100px 0px;
   }
 }
 #intro h1 {
@@ -631,6 +1003,17 @@ footer #icons ul li a:visited:active {
   display: grid;
   grid-template-areas: ". material .";
   grid-template-columns: 7.5% auto 7.5%;
+  margin: 0px 0px 60px;
+}
+@media (min-width: 768px) {
+  #material {
+    margin: 0px 0px 85px;
+  }
+}
+@media (min-width: 1200px) {
+  #material {
+    margin: 0px 0px 160px;
+  }
 }
 #material > div {
   grid-area: material;
@@ -638,11 +1021,49 @@ footer #icons ul li a:visited:active {
 #material > div p {
   text-align: center;
   color: #454545;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 10px 0px 0px;
+}
+@media (min-width: 768px) {
+  #material > div p {
+    font-size: 1.25rem;
+    padding: 20px 0px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #material > div p {
+    font-size: 1.5625rem;
+    padding: 25px 0px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  #material > div p {
+    padding: 35px 0px 0px;
+  }
+}
+#material > div p span {
+  font-style: italic;
 }
 #material > div h2 {
   text-align: center;
   background-color: #F9B475;
   color: #513823;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 8px;
+}
+@media (min-width: 768px) {
+  #material > div h2 {
+    font-size: 2.5rem;
+    padding: 16px 16px;
+  }
+}
+@media (min-width: 992px) {
+  #material > div h2 {
+    font-size: 3.75rem;
+    padding: 32px 32px;
+  }
 }
 #material > div img {
   width: 100%;
